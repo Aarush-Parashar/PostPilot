@@ -4,6 +4,7 @@ import { supabase } from '../supabase.js';
 export default async function handler(req, res) {
   try {
     const oauth2Client = getOAuthClient();
+    
     const code = req.query.code;
 
     console.log('🔁 OAuth Code:', code);
